@@ -1,0 +1,91 @@
+/**
+
+  Use animations here. Useful resources on http://docs.codacloud.net
+
+**/
+
+
+.head {
+  /* TODO */
+
+}
+
+.body {
+  /* TODO */
+  
+}
+
+.left.hand {
+  left: -45px;
+  animation: swing-arm-left 1s infinite ease-in-out;
+
+}
+
+.right.hand {
+  right: -45px;
+  animation: swing-arm-right 1s infinite ease-in-out;
+
+}
+
+.left.foot {
+  left: -20px;
+  bottom: -50px;
+  animation: tap-foot-left 0.5s infinite ease-in-out;
+
+}
+
+.right.foot {
+  right: -20px;
+  bottom: -50px;
+  animation: tap-foot-right 0.5s infinite ease-in-out reverse;
+
+}
+
+@keyframes dance-body {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+/* Animation for left arm swinging */
+@keyframes swing-arm-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+/* Animation for right arm swinging */
+@keyframes swing-arm-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* Animation for left foot tapping */
+@keyframes tap-foot-left {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+/* Animation for right foot tapping */
+@keyframes tap-foot-right {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
